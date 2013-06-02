@@ -70,7 +70,7 @@ public class CmdSetHome implements CommandExecutor {
                 cs.sendMessage(MessageColor.NEGATIVE + "The name of your home cannot contain \":\"!");
                 return true;
             }
-            Integer limit = getHomeLimit(p);
+            Integer limit = 5;
             int curHomes = getCurrentHomes(p);
             if (limit != null && pcm.get("home." + name) != null) {
                 if (limit == 0) {
